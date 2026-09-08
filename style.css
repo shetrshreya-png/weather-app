@@ -1,0 +1,80 @@
+body{
+    background:linear-gradient(to right,rgb(91, 231, 212),rgb(101, 249, 148),rgb(252, 249, 100));
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+justify-content: center;
+margin-top: 25px;
+    
+}  
+
+.container{
+  padding: 60px 200px;
+    background:linear-gradient(to bottom, rgb(223, 255, 251),rgb(255, 236, 250));
+    border-radius: 20px;
+display:inline-flexbox;
+justify-content: center;
+border-style: solid;
+border-width: 2px;
+
+font-size: larger;
+font-family: cursive;
+
+
+}
+button{
+    padding: 5px 40px;
+   background-color: rgb(191, 242, 140);
+   border-radius: 4px;
+transition: .3s;
+}
+button:hover{
+  transform: scale(1.06);
+  background-color: rgb(127, 255, 136);
+  cursor: pointer;
+}
+input{
+    padding:10px 60px ;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+#result{
+    animation:fade 0.6s ease;
+    margin-top:20px;
+   
+    font-size:20px;
+font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+font-weight: bold;
+
+border-width: 2px;
+box-shadow: 20px 20px 35px rgb(186, 227, 103);
+
+
+
+ 
+}
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+#history{
+    list-style:none;
+    padding:0;
+}
+
+#history li{
+    background:white;
+    width:180px;
+    margin:8px auto;
+    padding:8px;
+    border-radius:10px;
+    cursor:pointer;
+}
